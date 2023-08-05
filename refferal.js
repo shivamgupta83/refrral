@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const referral = new mongoose.Schema({
-
+userId : String,
      DepositBonus:[{
           level     :Number,
           levelBonus:String,

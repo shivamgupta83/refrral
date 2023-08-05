@@ -14,9 +14,9 @@ app.post("/admin/referral-commission",async (req,res)=>{
 
 const {userId ,DepositBonus,BetInvestBonus,BetWinBonus} = req.body;
 
-if(!mongoose.isValidObjectId(userId)) {
-     return res.status(400).send({status:false,message:"not correct user id"})
-}
+// if(!mongoose.isValidObjectId(userId)) {
+//      return res.status(400).send({status:false,message:"not correct user id"})
+// }
 if(DepositBonus && typeof DepositBonus == "object"){
 
 let user = await refferal.create(req.body);
